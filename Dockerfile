@@ -1,6 +1,8 @@
 FROM nginx:mainline-alpine
+
 RUN rm /etc/nginx/conf.d/*
+RUN mkdir -p /usr/share/nginx/html/css
+
 ADD src/hello.conf /etc/nginx/conf.d/
 ADD src/index.html /usr/share/nginx/html/
-
-EXPOSE 8080
+ADD src/css/layouts /usr/share/nginx/html/css/layouts

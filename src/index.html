@@ -1,10 +1,49 @@
+<!doctype html>
+<html lang="en">
 <head>
-<title>Hello World</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="A layout example that shows off a responsive product landing page.">    <title>Hello World</title>    
+    <link rel="stylesheet" href="https://unpkg.com/purecss@1.0.1/build/pure-min.css" integrity="sha384-" crossorigin="anonymous">
+    
+    <!--[if lte IE 8]>
+        <link rel="stylesheet" href="https://unpkg.com/purecss@1.0.1/build/grids-responsive-old-ie-min.css">
+    <![endif]-->
+    <!--[if gt IE 8]><!-->
+        <link rel="stylesheet" href="https://unpkg.com/purecss@1.0.1/build/grids-responsive-min.css">
+    <!--<![endif]-->
+    
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css">
+    
+        <!--[if lte IE 8]>
+            <link rel="stylesheet" href="css/layouts/marketing-old-ie.css">
+        <![endif]-->
+        <!--[if gt IE 8]><!-->
+            <link rel="stylesheet" href="css/layouts/marketing.css">
+        <!--<![endif]-->
+</head>
+<body>
 
-<div class="info">
-<h> Hello World!!! -- Sample app -- For EKS managed nodes and self-manged nodes </h>
-<p><span>Server&nbsp;address:</span> <span>server_address</span></p>
-<p><span>Server&nbsp;name:</span> <span>server_hostname</span></p>
-<p class="smaller"><span>Date:</span> <span>server_date</span></p>
-<p class="smaller"><span>URI:</span> <span>server_url</span></p>
+<div class="header">
+    <div class="home-menu pure-menu pure-menu-horizontal pure-menu-fixed">
+        <a class="pure-menu-heading" href="">Hello World</a>
+
+    </div>
 </div>
+
+<div class="splash-container">
+    <div class="splash">
+        <h1 class="splash-head">Container Details</h1>  
+        <p class="splash-subhead"><span>Server&nbsp;address:</span> <span>server_address</span></p>
+        <p class="splash-subhead"><span>Server&nbsp;name:</span> <span>server_hostname</span></p>
+        <p class="splash-subhead"><span>Date:</span> <span>server_date</span></p>
+        <p class="splash-subhead"><span>URI:</span> <span>server_url</span></p>
+        <br>
+        <p>
+            <a href="https://aws.amazon.com/eks/" class="pure-button pure-button-primary">Get Started with Amazon EKS</a>
+        </p>
+    </div>
+</div>
+
+</body>
+</html>
